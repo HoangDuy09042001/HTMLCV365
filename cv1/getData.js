@@ -127,6 +127,7 @@ $('#personal_info-date_of_birth-input').change(function () {
         } else {
             cv1.personal_info.date_of_birth = $(this).val()
         }
+        sendData()
     } else {
         delete cv1.personal_info.date_of_birth
     }
@@ -139,6 +140,7 @@ $('#personal_info-phone-input').change(function () {
         } else {
             cv1.personal_info.phone = $(this).val()
         }
+        sendData()
     } else {
         delete cv1.personal_info.phone
     }
@@ -151,6 +153,7 @@ $('#personal_info-mail-input').change(function () {
         } else {
             cv1.personal_info.mail = $(this).val()
         }
+        sendData()
     } else {
         delete cv1.personal_info.mail
     }
@@ -163,6 +166,7 @@ $('#personal_info-location-input').change(function () {
         } else {
             cv1.personal_info.location = $(this).val()
         }
+        sendData()
     } else {
         delete cv1.personal_info.location
     }

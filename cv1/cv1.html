@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="cv1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- thông tin chung -->
+        <div class="header">Thông tin chung <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên</div>
+                <input class="input" type="text" placeholder="Nhập tên" id="name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Công việc</div>
+                <input class="input" type="text" placeholder="Nhập công việc" id="job-input">
+            </div>
+        </div>
+        <!-- mục tiêu nghề nghiệp -->
+        <div class="header">Mục tiêu nghề nghiệp <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tiêu đề</div>
+                <input class="input" type="text" placeholder="Nhập tiêu đề" id="aim-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Nội dung</div>
+                <input class="input" type="text" placeholder="Nhập nội dung" id="aim-context-input">
+            </div>
+            <div class="button" id="add-aim">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- kinh nghiệm -->
+        <div class="header">Kinh nghiệm làm việc <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên công ty</div>
+                <input class="input" type="text" placeholder="Nhập tên công ty" id="exp-com_name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Thời gian làm việc</div>
+                <input class="input" type="text" placeholder="Nhập thời gian" id="exp-date-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Công việc</div>
+                <input class="input" type="text" placeholder="Nhập công việc" id="exp-job-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Chi tiết công việc</div>
+                <input class="input" type="text" placeholder="Nhập chi tiết công việc" id="exp-context-input">
+            </div>
+            <div class="button" id="add-exp">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- người tham chiếu -->
+        <div class="header">Người tham chiếu <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên người tham chiếu</div>
+                <input class="input" type="text" placeholder="Nhập tên" id="conference-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Chức vụ</div>
+                <input class="input" type="text" placeholder="Nhập chức vụ" id="conference-context-input">
+            </div>
+            <div class="button" id="add-conference">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- thông tin cá nhân -->
+        <div class="header">Thông tin cá nhân <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Ngày sinh</div>
+                <input class="input" type="text" placeholder="Nhập ngày sinh" id="personal_info-date_of_birth-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Số điện thoại</div>
+                <input class="input" type="text" placeholder="Nhập số điện thoại" id="personal_info-phone-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Email</div>
+                <input class="input" type="text" placeholder="Nhập email" id="personal_info-mail-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Địa chỉ</div>
+                <input class="input" type="text" placeholder="Nhập địa chỉ" id="personal_info-location-input">
+            </div>
+        </div>
+        <!-- dự án -->
+        <div class="header">Dự án tham gia <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Thông tin dự án</div>
+                <textarea id="project-context-input" cols="18" rows="2" placeholder="Nhập thông tin về dự án"
+                    class="textarea"></textarea>
+            </div>
+        </div>
+        <!-- kỹ năng -->
+        <div class="header">Kỹ năng <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Mô tả về kỹ năng</div>
+                <textarea id="skill-context-input" cols="18" rows="2" placeholder="Nhập thông tin về kỹ năng"
+                    class="textarea"></textarea>
+            </div>
+        </div>
+        <!-- chứng chỉ -->
+        <div class="header">Chứng chỉ <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên chứng chỉ</div>
+                <input class="input" type="text" placeholder="Nhập tên chứng chỉ" id="degree-context-input">
+            </div>
+        </div>
+        <!-- sở thích -->
+        <div class="header">Sở thích <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Sở thích</div>
+                <input class="input" type="text" placeholder="Nhập sở thích" id="hobby-context-input">
+            </div>
+        </div>
+        <!-- giải thưởng -->
+        <div class="header">Giải thưởng <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên giải thưởng</div>
+                <input class="input" type="text" placeholder="Nhập tên giải thưởng" id="gift-context-input">
+            </div>
+        </div>
+        <!-- hoạt động -->
+        <div class="header">Hoạt động <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Hoạt động</div>
+                <textarea id="activation-context-input" cols="18" rows="2" placeholder="Nhập hoạt động"
+                    class="textarea"></textarea>
+            </div>
+        </div>
+        <div class="button header" id="submit">
+            <button>Lưu</button>
+        </div>
+    </div>
+    <div class="context-cv"></div>
+    <div class="result-cv"><iframe class="cv1-au" src="./simi.html" frameborder="0" 
+        width="100%" height="100%"
+        id="myIframe"></iframe>
+    </div>
+
+</body>
+<script src="cv1.js"></script>
+<script src="getData.js"></script>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="cv2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- thông tin chung -->
+        <div class="header">Thông tin chung <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên</div>
+                <input class="input" type="text" placeholder="Nhập tên" id="name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Công việc</div>
+                <input class="input" type="text" placeholder="Nhập công việc" id="job-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Tiểu sử</div>
+                <textarea 
+                id="abstract-input" 
+                    cols="18"
+                    rows="2" 
+                    placeholder="Nhập tiểu sử"
+                    class="textarea"
+                ></textarea>
+            </div>
+        </div>
+        <!-- Ngôn ngữ -->
+        <div class="header">Ngôn ngữ<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên ngôn ngữ</div>
+                <input class="input" type="text" placeholder="Nhập tiêu đề" id="language-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mức độ thành thạo</div>
+                <input class="input" type="number" placeholder="Nhập nội dung (phần trăm)" id="language-value-input">
+            </div>
+            <div class="button" id="add-language">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- kỹ năng -->
+        <div class="header">Kỹ năng <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Kỹ năng</div>
+                <input class="input" type="text" placeholder="Nhập kỹ năng" id="skills-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mức độ thành thạo</div>
+                <input class="input" type="number" placeholder="Nhập mức độ thành thạo (phần trăm)" id="skills-value-input">
+            </div>
+            <div class="button" id="add-skills">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- thông tin liên hệ -->
+        <div class="header">Thông tin liên hệ<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Phương thức liên hệ</div>
+                <input class="input" type="text" placeholder="Nhập phương thức liên hệ" id="contact-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Nội dung</div>
+                <input class="input" type="text" placeholder="Nhập nội dung" id="contact-context-input">
+            </div>
+            <div class="button" id="add-contact">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- kinh nghiệm -->
+        <div class="header">Kinh nghiệm làm việc <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Thời gian làm việc</div>
+                <input class="input" type="text" placeholder="Nhập thời gian làm việc" id="exp-date-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mô tả công việc</div>
+                <textarea
+                    id="exp-context-input" 
+                    cols="18"
+                    rows="2" 
+                    placeholder="Nhập mô tả công việc"
+                    class="textarea"
+                ></textarea>
+            </div>
+            <div class="button" id="add-exp">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <div class="button header" id="submit">
+            <button>Lưu</button>
+        </div>
+    </div>
+    <div class="context-cv"></div>
+    <div class="result-cv"></div>
+</body>
+<script src="cv2.js"></script>
+<script src="getData.js"></script>
+</html>

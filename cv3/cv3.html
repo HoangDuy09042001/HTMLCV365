@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="cv3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- thông tin chung -->
+        <div class="header">Thông tin chung <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên</div>
+                <input class="input" type="text" placeholder="Nhập tên" id="name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Công việc</div>
+                <input class="input" type="text" placeholder="Nhập công việc" id="job-input">
+            </div>
+        </div>
+        <!-- Học vấn -->
+        <div class="header">Học vấn<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên trường</div>
+                <input class="input" type="text" placeholder="Nhập tên trường" id="edu-school_name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Thời gian</div>
+                <input class="input" type="text" placeholder="Nhập thời gian" id="edu-date-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mô tả</div>
+                <textarea
+                    id="edu-context-input" 
+                    cols="18"
+                    rows="2" 
+                    placeholder="Nhập mô tả"
+                    class="textarea"
+                ></textarea>
+            </div>
+            <div class="button" id="add-edu">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- kinh nghiệm -->
+        <div class="header">Kinh nghiệm làm việc <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên công ty</div>
+                <input class="input" type="text" placeholder="Nhập thời gian làm việc" id="exp-come_name-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Thời gian</div>
+                <input class="input" type="text" placeholder="Nhập thời gian" id="exp-date-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mô tả công việc</div>
+                <textarea
+                    id="exp-context-input" 
+                    cols="18"
+                    rows="2" 
+                    placeholder="Nhập mô tả công việc"
+                    class="textarea"
+                ></textarea>
+            </div>
+            <div class="button" id="add-exp">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- thông tin liên hệ -->
+        <div class="header">Thông tin liên hệ<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Số điện thoại</div>
+                <input class="input" type="text" placeholder="Nhập số điện thoại" id="contact-phone-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Email</div>
+                <input class="input" type="text" placeholder="Nhập email" id="contact-email-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Địa điểm</div>
+                <input class="input" type="text" placeholder="Nhập địa chỉ" id="contact-address-input">
+            </div>
+        </div>
+        <!-- kỹ năng -->
+        <div class="header">Kỹ năng <span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Kỹ năng</div>
+                <input class="input" type="text" placeholder="Nhập kỹ năng" id="skills-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mức độ thành thạo</div>
+                <input class="input" type="number" placeholder="Nhập mức độ thành thạo (phần trăm)" id="skills-value-input">
+            </div>
+            <div class="button" id="add-skills">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- Sở thích -->
+        <div class="header">Sở thích<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Sở thích</div>
+                <input class="input" type="text" placeholder="Nhập sở thích" id="hobby-contents-input">
+            </div>
+            <div class="button" id="add-hobby">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <!-- Ngôn ngữ -->
+        <div class="header">Ngôn ngữ<span class="icon-rectange"></span></div>
+        <div class="content">
+            <div class="flex flex-align-center">
+                <div class="head">Tên ngôn ngữ</div>
+                <input class="input" type="text" placeholder="Nhập tiêu đề" id="language-title-input">
+            </div>
+            <div class="flex flex-align-center">
+                <div class="head">Mức độ thành thạo</div>
+                <input class="input" type="number" placeholder="Nhập nội dung (phần trăm)" id="language-value-input">
+            </div>
+            <div class="button" id="add-language">
+                <button>Thêm</button>
+            </div>
+        </div>
+        <div class="button header" id="submit">
+            <button>Lưu</button>
+        </div>
+    </div>
+    <div class="context-cv">
+        <div id="name"></div>
+        <div id="job"></div>
+    </div>
+    <div class="result-cv"></div>
+</body>
+<script src="cv3.js"></script>
+<script src="getData.js"></script>
+</html>

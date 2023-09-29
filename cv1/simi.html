@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./simi.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"
+        integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="App">
+        <div class="cv3" id="cv3" style=" margin: auto">
+            <div class="box1_cv3 gradient-background">
+                <div class="contact_and_ava">
+                    <div class="sub1">
+                        <div class="hexagon" style="position:relative">
+                            <div class="content-hexa"
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;color:white;font-size:10px">
+                            </div><svg version="1.1" id="Layer_1" viewBox="0 0 512 512" fill="#c2c2c2" height="100px"
+                                width="100px">
+                                <polygon points="25.045,128 256,0 486.955,128 486.955,384 256,512 25.045,384 ">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sub2">
+                        <div class="hexagon" style="position:relative">
+                            <div class="content-hexa"
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;color:white;font-size:10px">
+                                <div class="birthday"><svg fill="white" height="30px" width="30px" viewBox="0 0 50 50">
+                                        <path
+                                            d="M25 0.09375L24.21875 1.09375C23.515625 1.992188 20 6.578125 20 9C20 11.414063 21.722656 13.441406 24 13.90625L24 10C24 9.449219 24.449219 9 25 9C25.550781 9 26 9.449219 26 10L26 13.90625C28.277344 13.441406 30 11.414063 30 9C30 6.578125 26.484375 1.992188 25.78125 1.09375 Z M 23 15C21.347656 15 20 16.347656 20 18L20 26L30 26L30 18C30 16.347656 28.652344 15 27 15 Z M 11 28C8.179688 28 5.761719 29.683594 4.65625 32.09375C5.226563 33.597656 5.804688 34.398438 5.8125 34.40625C6.703125 35.59375 8.390625 37 11.40625 37C13.863281 37 15.6875 36.15625 17 34.40625L17.75 33.375L18.5625 34.375C20.042969 36.152344 22.152344 37 25 37C27.769531 37 30 36.101563 31.4375 34.375L32.25 33.375L33 34.40625C34.3125 36.15625 36.136719 37 38.59375 37C41.050781 37 42.875 36.15625 44.1875 34.40625C44.214844 34.371094 44.964844 33.414063 45.375 32.125C44.277344 29.691406 41.839844 28 39 28 Z M 4 35.3125L4 42L46 42L46 35.34375C45.875 35.523438 45.792969 35.609375 45.78125 35.625C44.113281 37.847656 41.679688 39 38.59375 39C35.941406 39 33.785156 38.167969 32.15625 36.5C30.753906 37.785156 28.5 39 25 39C22.039063 39 19.640625 38.164063 17.84375 36.5C16.214844 38.164063 14.054688 39 11.40625 39C7.5625 39 5.351563 37.144531 4.1875 35.59375C4.175781 35.578125 4.113281 35.484375 4 35.3125 Z M 0 44L0 45C0 50 4.890625 50 6.5 50L43.5 50C45.105469 50 50 50 50 45L50 44Z">
+                                        </path>
+                                    </svg></div><span></span>
+                            </div><svg version="1.1" id="Layer_1" viewBox="0 0 512 512" fill="#6c5b7b" height="100px"
+                                width="100px">
+                                <polygon points="25.045,128 256,0 486.955,128 486.955,384 256,512 25.045,384 ">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sub3">
+                        <div class="hexagon" style="position:relative">
+                            <div class="content-hexa"
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;color:white;font-size:10px">
+                                <div class="phone"><svg fill="white" height="30px" width="30px" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.795 2h-5.59c-1.115 0-1.519.116-1.926.334a2.272 2.272 0 0 0-.945.945C6.116 3.686 6 4.09 6 5.205v13.59c0 1.114.116 1.519.334 1.926.218.407.538.727.945.945.407.218.811.334 1.926.334h5.59c1.114 0 1.519-.116 1.926-.334.407-.218.727-.538.945-.945.218-.407.334-.811.334-1.926V5.205c0-1.115-.116-1.519-.334-1.926a2.272 2.272 0 0 0-.945-.945C16.314 2.116 15.91 2 14.795 2zM8 17.995V6.005h8v11.99H8z"
+                                            fill="white"></path>
+                                    </svg></div><span></span>
+                            </div><svg version="1.1" id="Layer_1" viewBox="0 0 512 512" fill="#c06c84" height="100px"
+                                width="100px">
+                                <polygon points="25.045,128 256,0 486.955,128 486.955,384 256,512 25.045,384 ">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sub4">
+                        <div class="hexagon" style="position:relative">
+                            <div class="content-hexa"
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;color:white;font-size:10px">
+                                <div class="email"><svg fill="white" height="30px" width="30px" viewBox="0 -3.5 32 32"
+                                        version="1.1">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Icon-Set-Filled" transform="translate(-414.000000, -261.000000)"
+                                                fill="white">
+                                                <path
+                                                    d="M430,275.916 L426.684,273.167 L415.115,285.01 L444.591,285.01 L433.235,273.147 L430,275.916 L430,275.916 Z M434.89,271.89 L445.892,283.329 C445.955,283.107 446,282.877 446,282.634 L446,262.862 L434.89,271.89 L434.89,271.89 Z M414,262.816 L414,282.634 C414,282.877 414.045,283.107 414.108,283.329 L425.147,271.927 L414,262.816 L414,262.816 Z M445,261 L415,261 L430,273.019 L445,261 L445,261 Z"
+                                                    id="mail"></path>
+                                            </g>
+                                        </g>
+                                    </svg></div><span></span>
+                            </div><svg version="1.1" id="Layer_1" viewBox="0 0 512 512" fill="#c06c84" height="100px"
+                                width="100px">
+                                <polygon points="25.045,128 256,0 486.955,128 486.955,384 256,512 25.045,384 ">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sub5">
+                        <div class="hexagon" style="position:relative">
+                            <div class="content-hexa"
+                                style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;color:white;font-size:10px">
+                                <div class="location"><svg fill="white" height="30px" width="30px" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                        </path>
+                                    </svg></div><span></span>
+                            </div><svg version="1.1" id="Layer_1" viewBox="0 0 512 512" fill="#f1a0a7" height="100px"
+                                width="100px">
+                                <polygon points="25.045,128 256,0 486.955,128 486.955,384 256,512 25.045,384 ">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="name_job_aim_exp_con">
+                    <div class="name_job">
+                        <div class="job"></div>
+                        <div class="name"></div>
+                    </div>
+                    <!-- <div class="aim">
+                        <div class="aim-short">
+                            <div class="aim-header"></div>
+                            <div class="aim-short-title">Mục tiêu ngắn hạn: </div>
+                            <div class="aim-content">Tìm được môi trường làm việc phù hợp, vói những kiến thức và kinh
+                                nghiệm làm việc công việc kế toán. Tôi mong muốn đóng góp vào sự phát triển</div>
+                            <div class="aim-long-title">Mục tiêu dài hạn: </div>
+                            <div class="aim-content">Trở thành kế toán viên</div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="exp-cv3">
+                        <div class="title-exp-cv3">KINH NGHIỆM LÀM VIỆC</div>
+                        <div class="sub-exp-cv3">
+                            <div class="com-name">Công ty Cổ phần 365</div>
+                            <div class="date">(Xưa đến nay)</div>
+                            <div class="job-exp">Kế toán tổng hợp</div>
+                            <div class="context-exp">Kế toán tổng hợp là một vai trò quan trọng trong lĩnh vực kế toán.
+                                Người kế toán tổng hợp chịu trách nhiệm thu thập, kiểm tra, và tổng hợp thông tin tài
+                                chính của một tổ chức hoặc công ty. Dưới đây là một số nhiệm vụ và trách nhiệm quan
+                                trọng của vị trí kế toán tổng hợp</div>
+                        </div>
+                        <div class="sub-exp-cv3">
+                            <div class="com-name">Công ty Cổ phần 365</div>
+                            <div class="date">(Xưa đến nay)</div>
+                            <div class="job-exp">Kế toán tổng hợp</div>
+                            <div class="context-exp">Kế toán tổng hợp là một vai trò quan trọng trong lĩnh vực kế toán.
+                                Người kế toán tổng hợp chịu trách nhiệm thu thập, kiểm tra, và tổng hợp thông tin tài
+                                chính của một tổ chức hoặc công ty. Dưới đây là một số nhiệm vụ và trách nhiệm quan
+                                trọng của vị trí kế toán tổng hợp</div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="conference-cv3">
+                        <div class="title-exp-cv3">NGƯỜI THAM CHIẾU</div>
+                        <div class="conference-cv3-name">Nguyễn Thị B</div>
+                        <div class="conference-cv3-role">Kế toán trưởng công ty cổ phần 365</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="box2-cv3">
+                <div class="bone-tree">
+                    <div class="upper-box">
+                        <!-- <div class="upper-box-sub"
+                            style="height:450px;margin-left:50px;border-left:3px solid #8f7cce;border-top:3px solid #8f7cce">
+                            <div class="header">DỰ ÁN THAM GIA</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div>
+                        <div class="upper-box-sub"
+                            style="height:330px;margin-left:50px;border-left:3px solid #009393;border-top:3px solid #009393">
+                            <div class="header">CHỨNG CHỈ</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div>
+                        <div class="upper-box-sub"
+                            style="height:210px;margin-left:50px;border-left:3px solid #fa9035;border-top:3px solid #fa9035">
+                            <div class="header">SỞ THÍCH</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div> -->
+                    </div>
+                    <div class="node-tree-bar-pa">
+                        <!-- <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-0" style="background-color:#8f7cce">
+                                    <div class="round-content" style="color:#8f7cce">1</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#8f7cce; width: 50px; height: 25px;"></div>
+                        </div>
+                        <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-1" style="background-color:#00bbe8">
+                                    <div class="round-content" style="color:#00bbe8">2</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#00bbe8; width: 50px; height: 25px;"></div>
+                        </div>
+                        <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-2" style="background-color:#009393">
+                                    <div class="round-content" style="color:#009393">3</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#009393; width: 50px; height: 25px;"></div>
+                        </div>
+                        <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-3" style="background-color:#ffb200">
+                                    <div class="round-content" style="color:#ffb200">4</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#ffb200; width: 50px; height: 25px;"></div>
+                        </div>
+                        <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-4" style="background-color:#fa9035">
+                                    <div class="round-content" style="color:#fa9035">5</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#fa9035; width: 50px; height: 25px;"></div>
+                        </div>
+                        <div class="node-tree">
+                            <div class="round-border">
+                                <div class="round-padding" id="node-tree-5" style="background-color:#8f7cce">
+                                    <div class="round-content" style="color:#8f7cce">6</div>
+                                </div>
+                            </div>
+                            <div class="node-bar" style="background-color:#8f7cce; width: 50px; height: 25px;"></div>
+                        </div> -->
+                    </div>
+                    <div class="down-box">
+                        <!-- <div class="upper-box-sub down"
+                            style="height:390px;margin-left:50px;border-left:3px solid #00bbe8;border-bottom:3px solid #00bbe8">
+                            <div class="header">KỸ NĂNG</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div>
+                        <div class="upper-box-sub down"
+                            style="height:270px;margin-left:50px;border-left:3px solid #ffb200;border-bottom:3px solid #ffb200">
+                            <div class="header">GIẢI THƯỞNG</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div>
+                        <div class="upper-box-sub down"
+                            style="height:150px;margin-left:50px;border-left:3px solid #8f7cce;border-bottom:3px solid #8f7cce">
+                            <div class="header">HOẠT ĐỘNG</div>
+                            <div class="content">- Ông nói chuyện buồn cười nói chuyện buồn cười
+                                - Ông nói chuyện buồn cười nói chuyện buồn cười</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="click-down"
+            style="width: 100px; height: 50px; background-color: #ccc; border-radius: 5px; display: flex; justify-content: center; align-items: center; cursor: pointer">
+            Click
+        </div>
+    </div>
+    <script>
+        // Lấy thẻ div với class "upper-box" từ DOM
+        // const bonetree = [
+        //     { color: '#8f7cce', title: "DỰ ÁN THAM GIA", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+        //     { color: '#00bbe8', title: "KỸ NĂNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+        //     { color: '#009393', title: "CHỨNG CHỈ", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+        //     { color: '#ffb200', title: "GIẢI THƯỞNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+        //     { color: '#fa9035', title: "SỞ THÍCH", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+        //     // { color: '#8f7cce', title: "HOẠT ĐỘNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
+
+        // ]
+
+        // // Lặp qua mảng dữ liệu và tạo các thẻ con
+        // bonetree.forEach((item, index) => {
+        //     const upperBox = document.querySelector(".upper-box");
+        //     const downBox = document.querySelector(".down-box");
+        //     // Tạo một thẻ div con mới
+        //     if (index % 2 === 0) {
+        //         const subDiv = document.createElement("div");
+        //         subDiv.classList.add("upper-box-sub");
+        //         subDiv.style.height = `${450 - index * 60}px`;
+        //         subDiv.style.marginLeft = "50px";
+        //         subDiv.style.borderLeft = `3px solid ${item.color}`;
+        //         subDiv.style.borderTop = `3px solid ${item.color}`;
+
+        //         // Tạo thẻ div cho header
+        //         const headerDiv = document.createElement("div");
+        //         headerDiv.classList.add("header");
+        //         headerDiv.textContent = item.title;
+
+        //         // Tạo thẻ div cho content
+        //         const contentDiv = document.createElement("div");
+        //         contentDiv.classList.add("content");
+        //         contentDiv.textContent = item.content;
+
+        //         // Thêm các thẻ con vào thẻ cha (subDiv)
+        //         subDiv.appendChild(headerDiv);
+        //         subDiv.appendChild(contentDiv);
+
+        //         upperBox.appendChild(subDiv);
+
+        //     } else {
+        //         const downSubDiv = document.createElement("div");
+        //         downSubDiv.classList.add("upper-box-sub", "down");
+        //         downSubDiv.style.height = `${450 - (index - 1) * 60}px`; // Hoặc item-specific
+        //         downSubDiv.style.marginLeft = "50px";
+        //         downSubDiv.style.borderLeft = `3px solid ${item.color}`; // Hoặc item-specific border color
+        //         downSubDiv.style.borderBottom = `3px solid ${item.color}`; // Hoặc item-specific border color
+
+        //         const headerDiv = document.createElement("div");
+        //         headerDiv.classList.add("header");
+        //         headerDiv.textContent = item.title;
+
+        //         const contentDiv = document.createElement("div");
+        //         contentDiv.classList.add("content");
+        //         contentDiv.textContent = item.content;
+
+        //         downSubDiv.appendChild(headerDiv);
+        //         downSubDiv.appendChild(contentDiv);
+
+        //         downBox.appendChild(downSubDiv);
+        //     }
+        //     var divNodeTree = document.createElement('div');
+        //     divNodeTree.className = 'node-tree';
+
+        //     var roundBorderDiv = document.createElement('div');
+        //     roundBorderDiv.className = 'round-border';
+
+        //     var roundPaddingDiv = document.createElement('div');
+        //     roundPaddingDiv.className = 'round-padding';
+        //     roundPaddingDiv.id = 'node-tree-' + index;
+        //     roundPaddingDiv.style.backgroundColor = item.color;
+
+        //     var roundContentDiv = document.createElement('div');
+        //     roundContentDiv.className = 'round-content';
+        //     roundContentDiv.style.color = item.color;
+        //     roundContentDiv.textContent = index + 1;
+
+        //     roundPaddingDiv.appendChild(roundContentDiv);
+        //     roundBorderDiv.appendChild(roundPaddingDiv);
+        //     divNodeTree.appendChild(roundBorderDiv);
+
+        //     var nodeBarDiv = document.createElement('div');
+        //     nodeBarDiv.className = 'node-bar';
+        //     nodeBarDiv.style.backgroundColor = item.color;
+        //     nodeBarDiv.style.width = '50px';
+        //     nodeBarDiv.style.height = '25px';
+        //     divNodeTree.appendChild(nodeBarDiv);
+
+        //     var nodeTreeBarPa = document.querySelector('.node-tree-bar-pa');
+        //     nodeTreeBarPa.appendChild(divNodeTree);
+        // });
+
+        const cv1 = {
+            name: 'NGUYỄN HOÀNG ANH',
+            job: 'Kế toán tổng hợp',
+            exp: {
+                title: 'KINH NGHIỆM LÀM VIỆC',
+                contents: [
+                    { com_name: 'Công ty cổ phần 365', date: '(TỪ 01/01- 30/12/2017)', job: 'Kế toán tổng hợp', context: 'Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm' },
+                    { com_name: 'Công ty CV 365', date: '(TỪ 01/01- 30/12/2017)', job: 'Kế toán tổng hợp', context: 'Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm' },
+                ]
+            },
+            conference: {
+                title: 'NGƯỜI THAM CHIẾU',
+                person: [
+                    { name: 'NGUYỄN THỊ B', context: 'Kế toán trưởng phòng 365' },
+                    { name: 'NGUYỄN THỊ A', context: 'Kế toán trưởng phòng 365' }
+                ]
+            },
+            aim: {
+                title: 'MỤC TIÊU NGHỀ NGHIỆP',
+                contents: [
+                    { title: 'Mục tiêu ngắn hạn', context: 'Tìm được môi trường làm việc phù hợp với những kinh nghiệm làm việc có được về công việc kế toán. Tôi mong muốn rằng' },
+                    { title: 'Mục tiêu dài hạn', context: 'Trở thành kế toán viên' }
+                ]
+            },
+            personal_info: {
+                date_of_birth: '01/01/1987',
+                phone: '0363984002',
+                mail: 'lanh@gamil.com',
+                location: 'Số 1, đường Cầu Giấy'
+            },
+            project: {
+                title: 'DỰ ÁN THAM GIA',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+            skill: {
+                title: 'KỸ NĂNG',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+            degree: {
+                title: 'CHỨNG CHỈ',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+            hobby: {
+                title: 'HOBBY',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+            gift: {
+                title: 'GIẢI THƯỞNG',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+            activation: {
+                title: 'GIẢI THƯỞNG',
+                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
+            },
+        }
+
+
+        if (cv1.exp) {
+            var expDiv = $('<div>').addClass('exp-cv3');
+
+            var titleExpDiv = $('<div>').addClass('title-exp-cv3').text(cv1.exp.title);
+
+            expDiv.append(titleExpDiv);
+
+            cv1.exp.contents.forEach(function (expContent) {
+                var subExpDiv = $('<div>').addClass('sub-exp-cv3');
+
+                var comNameDiv = $('<div>').addClass('com-name').text(expContent.com_name);
+
+                var dateDiv = $('<div>').addClass('date').text(expContent.date);
+
+                var jobExpDiv = $('<div>').addClass('job-exp').text(expContent.job);
+
+                var contextExpDiv = $('<div>').addClass('context-exp').text(expContent.context);
+
+                subExpDiv.append(comNameDiv, dateDiv, jobExpDiv, contextExpDiv);
+
+                expDiv.append(subExpDiv);
+            });
+
+            $('.aim').after(expDiv);
+        }
+        $(".click-down").on("click", () => {
+            var element = document.querySelector('.cv3')
+            console.log(html2pdf(element))
+
+        });
+
+        window.addEventListener('message', function (event) {
+            try {
+                var receivedData = JSON.parse(event.data);
+                const dataParent = receivedData;
+                console.log('dataParent: ', dataParent, ' ', typeof dataParent);
+
+                console.log(receivedData);
+                if (receivedData) {
+                    if (dataParent.name) $(".name").text(`${dataParent.name}`)
+                    if (dataParent.job) $(".job").text(`${dataParent.job}`)
+                    if (dataParent.aim) {
+                        $(".aim-header").text(`${dataParent.aim.title}`);
+                        $('.aim').empty()
+                        var newDiv = $('<div>').addClass('aim');
+                        var aimShortDiv = $('<div>').addClass('aim-short');
+                        var aimShortHeaderDiv = $('<div>').addClass('aim-header').text(`${dataParent.aim.title}`);
+                        aimShortDiv.append(aimShortHeaderDiv)
+                        if (dataParent.aim.contents) {
+                            dataParent.aim.contents.forEach((item, index) => {
+                                var aimShortTitleDiv = $('<div>').addClass('aim-short-title').text(`${item.title}`);
+                                var aimShortContentDiv = $('<div>').addClass('aim-content').text(`${item.context}`);
+                                aimShortDiv.append(aimShortTitleDiv, aimShortContentDiv);
+                            })
+                        }
+                        $('.name_job').after(newDiv.append(aimShortDiv));
+                    }
+                    if (dataParent.personal_info) {
+                        // $(".birthday").text(`${dataParent.personal_info.date_of_birth}`)
+                        if (dataParent.personal_info.date_of_birth) {
+                            $(".birthday").nextAll("span").empty();
+                            $(".birthday").after($("<span>").text(`${dataParent.personal_info.date_of_birth}`))
+                        }
+                        if (dataParent.personal_info.phone) {
+                            $(".phone").nextAll("span").empty();
+                            $(".phone").after($("<span>").text(`${dataParent.personal_info.phone}`))
+                        }
+                        if (dataParent.personal_info.mail) {
+                            $(".email").nextAll("span").empty();
+                            $(".email").after($("<span>").text(`${dataParent.personal_info.mail}`))
+                        }
+                        if (dataParent.personal_info.location) {
+                            $(".location").nextAll("span").empty();
+                            $(".location").after($("<span>").text(`${dataParent.personal_info.location}`))
+                        }
+                    }
+                    if (dataParent.exp) {
+                        $('.exp-cv3').empty()
+                        var expDiv = $('<div class="exp-cv3"></div>');
+                        var titleDiv = $(`<div class="title-exp-cv3"><span>${dataParent.exp.title}</span></div>`);
+                        expDiv.append(titleDiv);
+                        $.each(dataParent.exp.contents, function (index, experience) {
+                            var subExpDiv = $('<div class="sub-exp-cv3"></div>');
+                            var comNameDiv = $('<div class="com-name">' + experience.com_name + '</div>');
+                            var dateDiv = $('<div class="date">' + experience.date + '</div>');
+                            var jobDiv = $('<div class="job-exp">' + experience.job + '</div>');
+                            var contextDiv = $('<div class="context-exp">' + experience.context + '</div>');
+
+                            // Gắn các thẻ con vào thẻ cha
+                            subExpDiv.append(comNameDiv);
+                            subExpDiv.append(dateDiv);
+                            subExpDiv.append(jobDiv);
+                            subExpDiv.append(contextDiv);
+
+
+                            expDiv.append(subExpDiv);
+
+                            // Gắn thẻ expDiv vào phần tử có id là "experience-container"
+                        })
+                        $('.name_job_aim_exp_con').append(expDiv);
+                    }
+                    if (dataParent.conference) {
+                        $('.conference-cv3').empty()
+                        var conDiv = $('<div class="conference-cv3"></div>');
+                        var conTileDiv = $(`<div class="title-exp-cv3"><span>${dataParent.conference.title}</span></div>`);
+                        conDiv.append(conTileDiv)
+                        $.each(dataParent.conference.person, function (index, conference) {
+                            var conNamePer = $(`<div class="conference-cv3-name"><span>${conference.name}</span></div>`)
+                            var conContextPer = $(`<div class="conference-cv3-role"><span>${conference.context}</span></div>`)
+                            conDiv.append(conNamePer, conContextPer);
+                        })
+                        $('.name_job_aim_exp_con').append(conDiv);
+
+                    }
+                    if (dataParent.bonetree) {
+                        $('.upper-box').empty();
+                        $('.down-box').empty();
+                        $('.node-tree-bar-pa').empty();
+
+                        $.each(dataParent.bonetree, function (index, item) {
+                            const upperBox = $(".upper-box");
+                            const downBox = $(".down-box");
+
+                            if (index % 2 === 0) {
+                                const subDiv = $("<div></div>").addClass("upper-box-sub");
+                                subDiv.css({
+                                    height: `${450 - index * 60}px`,
+                                    marginLeft: "50px",
+                                    borderLeft: `3px solid ${item.color}`,
+                                    borderTop: `3px solid ${item.color}`,
+                                });
+
+                                const headerDiv = $("<div></div>").addClass("header").text(item.title);
+                                const contentDiv = $("<div></div>").addClass("content").text(item.content);
+
+                                subDiv.append(headerDiv);
+                                subDiv.append(contentDiv);
+
+                                upperBox.append(subDiv);
+                            } else {
+                                const downSubDiv = $("<div></div>").addClass("upper-box-sub down");
+                                downSubDiv.css({
+                                    height: `${450 - (index - 1) * 60}px`,
+                                    marginLeft: "50px",
+                                    borderLeft: `3px solid ${item.color}`,
+                                    borderBottom: `3px solid ${item.color}`,
+                                });
+
+                                const headerDiv = $("<div></div>").addClass("header").text(item.title);
+                                const contentDiv = $("<div></div>").addClass("content").text(item.content);
+
+                                downSubDiv.append(headerDiv);
+                                downSubDiv.append(contentDiv);
+
+                                downBox.append(downSubDiv);
+                            }
+
+                            var divNodeTree = $("<div></div>").addClass("node-tree");
+                            var roundBorderDiv = $("<div></div>").addClass("round-border");
+                            var roundPaddingDiv = $("<div></div>").addClass("round-padding").attr("id", "node-tree-" + index);
+                            roundPaddingDiv.css({
+                                backgroundColor: item.color,
+                            });
+
+                            var roundContentDiv = $("<div></div>").addClass("round-content");
+                            roundContentDiv.css({
+                                color: item.color,
+                            });
+                            roundContentDiv.text(index + 1);
+
+                            roundPaddingDiv.append(roundContentDiv);
+                            roundBorderDiv.append(roundPaddingDiv);
+                            divNodeTree.append(roundBorderDiv);
+
+                            var nodeBarDiv = $("<div></div>").addClass("node-bar");
+                            nodeBarDiv.css({
+                                backgroundColor: item.color,
+                                width: "50px",
+                                height: "25px",
+                            });
+                            divNodeTree.append(nodeBarDiv);
+
+                            var nodeTreeBarPa = $(".node-tree-bar-pa");
+                            nodeTreeBarPa.append(divNodeTree);
+                        });
+                    }
+
+                }
+            } catch (error) {
+                console.error('Xảy ra lỗi trong quá trình xử lý dữ liệu: ' + error);
+            }
+        });
+
+    </script>
+</body>
+
+</html>

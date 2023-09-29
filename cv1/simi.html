@@ -245,188 +245,42 @@
             </div>
         </div>
         <div class="click-down"
-            style="width: 100px; height: 50px; background-color: #ccc; border-radius: 5px; display: flex; justify-content: center; align-items: center; cursor: pointer">
+            style="width: 100px; height: 50px; background-color: #ccc; border-radius: 5px; display: flex; justify-content: center; align-items: center; cursor: pointer; margin-top: 10px">
             Click
+        </div>
+        <div class="click-down-save"
+            style="width: 100px; height: 50px; background-color: #ccc; border-radius: 5px; display: flex; justify-content: center; align-items: center; cursor: pointer; margin-top: 10px">
+            Save
         </div>
     </div>
     <script>
-        // Lấy thẻ div với class "upper-box" từ DOM
-        // const bonetree = [
-        //     { color: '#8f7cce', title: "DỰ ÁN THAM GIA", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-        //     { color: '#00bbe8', title: "KỸ NĂNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-        //     { color: '#009393', title: "CHỨNG CHỈ", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-        //     { color: '#ffb200', title: "GIẢI THƯỞNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-        //     { color: '#fa9035', title: "SỞ THÍCH", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-        //     // { color: '#8f7cce', title: "HOẠT ĐỘNG", content: "- Ông nói chuyện buồn cười nói chuyện buồn cười\n- Ông nói chuyện buồn cười nói chuyện buồn cười" },
-
-        // ]
-
-        // // Lặp qua mảng dữ liệu và tạo các thẻ con
-        // bonetree.forEach((item, index) => {
-        //     const upperBox = document.querySelector(".upper-box");
-        //     const downBox = document.querySelector(".down-box");
-        //     // Tạo một thẻ div con mới
-        //     if (index % 2 === 0) {
-        //         const subDiv = document.createElement("div");
-        //         subDiv.classList.add("upper-box-sub");
-        //         subDiv.style.height = `${450 - index * 60}px`;
-        //         subDiv.style.marginLeft = "50px";
-        //         subDiv.style.borderLeft = `3px solid ${item.color}`;
-        //         subDiv.style.borderTop = `3px solid ${item.color}`;
-
-        //         // Tạo thẻ div cho header
-        //         const headerDiv = document.createElement("div");
-        //         headerDiv.classList.add("header");
-        //         headerDiv.textContent = item.title;
-
-        //         // Tạo thẻ div cho content
-        //         const contentDiv = document.createElement("div");
-        //         contentDiv.classList.add("content");
-        //         contentDiv.textContent = item.content;
-
-        //         // Thêm các thẻ con vào thẻ cha (subDiv)
-        //         subDiv.appendChild(headerDiv);
-        //         subDiv.appendChild(contentDiv);
-
-        //         upperBox.appendChild(subDiv);
-
-        //     } else {
-        //         const downSubDiv = document.createElement("div");
-        //         downSubDiv.classList.add("upper-box-sub", "down");
-        //         downSubDiv.style.height = `${450 - (index - 1) * 60}px`; // Hoặc item-specific
-        //         downSubDiv.style.marginLeft = "50px";
-        //         downSubDiv.style.borderLeft = `3px solid ${item.color}`; // Hoặc item-specific border color
-        //         downSubDiv.style.borderBottom = `3px solid ${item.color}`; // Hoặc item-specific border color
-
-        //         const headerDiv = document.createElement("div");
-        //         headerDiv.classList.add("header");
-        //         headerDiv.textContent = item.title;
-
-        //         const contentDiv = document.createElement("div");
-        //         contentDiv.classList.add("content");
-        //         contentDiv.textContent = item.content;
-
-        //         downSubDiv.appendChild(headerDiv);
-        //         downSubDiv.appendChild(contentDiv);
-
-        //         downBox.appendChild(downSubDiv);
-        //     }
-        //     var divNodeTree = document.createElement('div');
-        //     divNodeTree.className = 'node-tree';
-
-        //     var roundBorderDiv = document.createElement('div');
-        //     roundBorderDiv.className = 'round-border';
-
-        //     var roundPaddingDiv = document.createElement('div');
-        //     roundPaddingDiv.className = 'round-padding';
-        //     roundPaddingDiv.id = 'node-tree-' + index;
-        //     roundPaddingDiv.style.backgroundColor = item.color;
-
-        //     var roundContentDiv = document.createElement('div');
-        //     roundContentDiv.className = 'round-content';
-        //     roundContentDiv.style.color = item.color;
-        //     roundContentDiv.textContent = index + 1;
-
-        //     roundPaddingDiv.appendChild(roundContentDiv);
-        //     roundBorderDiv.appendChild(roundPaddingDiv);
-        //     divNodeTree.appendChild(roundBorderDiv);
-
-        //     var nodeBarDiv = document.createElement('div');
-        //     nodeBarDiv.className = 'node-bar';
-        //     nodeBarDiv.style.backgroundColor = item.color;
-        //     nodeBarDiv.style.width = '50px';
-        //     nodeBarDiv.style.height = '25px';
-        //     divNodeTree.appendChild(nodeBarDiv);
-
-        //     var nodeTreeBarPa = document.querySelector('.node-tree-bar-pa');
-        //     nodeTreeBarPa.appendChild(divNodeTree);
-        // });
-
-        const cv1 = {
-            name: 'NGUYỄN HOÀNG ANH',
-            job: 'Kế toán tổng hợp',
-            exp: {
-                title: 'KINH NGHIỆM LÀM VIỆC',
-                contents: [
-                    { com_name: 'Công ty cổ phần 365', date: '(TỪ 01/01- 30/12/2017)', job: 'Kế toán tổng hợp', context: 'Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm' },
-                    { com_name: 'Công ty CV 365', date: '(TỪ 01/01- 30/12/2017)', job: 'Kế toán tổng hợp', context: 'Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm' },
-                ]
-            },
-            conference: {
-                title: 'NGƯỜI THAM CHIẾU',
-                person: [
-                    { name: 'NGUYỄN THỊ B', context: 'Kế toán trưởng phòng 365' },
-                    { name: 'NGUYỄN THỊ A', context: 'Kế toán trưởng phòng 365' }
-                ]
-            },
-            aim: {
-                title: 'MỤC TIÊU NGHỀ NGHIỆP',
-                contents: [
-                    { title: 'Mục tiêu ngắn hạn', context: 'Tìm được môi trường làm việc phù hợp với những kinh nghiệm làm việc có được về công việc kế toán. Tôi mong muốn rằng' },
-                    { title: 'Mục tiêu dài hạn', context: 'Trở thành kế toán viên' }
-                ]
-            },
-            personal_info: {
-                date_of_birth: '01/01/1987',
-                phone: '0363984002',
-                mail: 'lanh@gamil.com',
-                location: 'Số 1, đường Cầu Giấy'
-            },
-            project: {
-                title: 'DỰ ÁN THAM GIA',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-            skill: {
-                title: 'KỸ NĂNG',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-            degree: {
-                title: 'CHỨNG CHỈ',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-            hobby: {
-                title: 'HOBBY',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-            gift: {
-                title: 'GIẢI THƯỞNG',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-            activation: {
-                title: 'GIẢI THƯỞNG',
-                context: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio.'
-            },
-        }
-
-
-        if (cv1.exp) {
-            var expDiv = $('<div>').addClass('exp-cv3');
-
-            var titleExpDiv = $('<div>').addClass('title-exp-cv3').text(cv1.exp.title);
-
-            expDiv.append(titleExpDiv);
-
-            cv1.exp.contents.forEach(function (expContent) {
-                var subExpDiv = $('<div>').addClass('sub-exp-cv3');
-
-                var comNameDiv = $('<div>').addClass('com-name').text(expContent.com_name);
-
-                var dateDiv = $('<div>').addClass('date').text(expContent.date);
-
-                var jobExpDiv = $('<div>').addClass('job-exp').text(expContent.job);
-
-                var contextExpDiv = $('<div>').addClass('context-exp').text(expContent.context);
-
-                subExpDiv.append(comNameDiv, dateDiv, jobExpDiv, contextExpDiv);
-
-                expDiv.append(subExpDiv);
-            });
-
-            $('.aim').after(expDiv);
-        }
         $(".click-down").on("click", () => {
             var element = document.querySelector('.cv3')
-            console.log(html2pdf(element))
+            const pdfContent = element
+
+            const pdfOptions = {
+                // margin: 10,     
+                filename: 'my-a3-pdf.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: {
+                    format: 'a3',  
+                    orientation: 'portrait', 
+                },
+            };
+
+            // Generate the PDF
+            html2pdf()
+                .from(pdfContent)
+                .set(pdfOptions)
+                .toPdf()
+                .get('pdf')
+                .then(function (pdf) {
+                    pdf.save();
+                });
+
+
+            // console.log(html2pdf(element))
 
         });
 
@@ -435,7 +289,7 @@
                 var receivedData = JSON.parse(event.data);
                 const dataParent = receivedData;
                 console.log('dataParent: ', dataParent, ' ', typeof dataParent);
-
+                var xhr = new XMLHttpRequest();
                 console.log(receivedData);
                 if (receivedData) {
                     if (dataParent.name) $(".name").text(`${dataParent.name}`)
@@ -457,7 +311,6 @@
                         $('.name_job').after(newDiv.append(aimShortDiv));
                     }
                     if (dataParent.personal_info) {
-                        // $(".birthday").text(`${dataParent.personal_info.date_of_birth}`)
                         if (dataParent.personal_info.date_of_birth) {
                             $(".birthday").nextAll("span").empty();
                             $(".birthday").after($("<span>").text(`${dataParent.personal_info.date_of_birth}`))
@@ -487,7 +340,6 @@
                             var jobDiv = $('<div class="job-exp">' + experience.job + '</div>');
                             var contextDiv = $('<div class="context-exp">' + experience.context + '</div>');
 
-                            // Gắn các thẻ con vào thẻ cha
                             subExpDiv.append(comNameDiv);
                             subExpDiv.append(dateDiv);
                             subExpDiv.append(jobDiv);
@@ -496,7 +348,6 @@
 
                             expDiv.append(subExpDiv);
 
-                            // Gắn thẻ expDiv vào phần tử có id là "experience-container"
                         })
                         $('.name_job_aim_exp_con').append(expDiv);
                     }

@@ -3,13 +3,17 @@
 }
 .cv3 {
     margin: auto;
-    width: 794px
+    /* width: calc(1588px); */
+    width: calc(0.635*1754px);
+    display: flex;
 }
 .cv3 .box1_cv3 {
     display: flex;
-    min-height: 1115px;
+    /* min-height: calc(1115px); */
+    min-height: calc(0.635*2480px);
     padding-top: 10px;
     padding-left: 10px;
+    width: 50%;
 }
 .cv3 .gradient-background {
     background-image: radial-gradient(circle, white, gray);
@@ -124,6 +128,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .cv3 .box2-cv3 .bone-tree {

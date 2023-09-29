@@ -1,0 +1,77 @@
+{
+    "name": "NGUYỄN HOÀNG ANH",
+    "job": "Kế toán tổng hợp",
+    "aim": {
+      "title": "MỤC TIÊU NGHỀ NGHIỆP",
+      "contents": [
+        {
+          "title": "Mục tiêu ngắn hạn",
+          "context": "Tìm được môi trường làm việc phù hợp với những kinh nghiệm làm việc có được về công việc kế toán. Tôi mong muốn rằng"
+        },
+        {
+          "title": "Mục tiêu dài hạn",
+          "context": "Trở thành kế toán viên"
+        }
+      ]
+    },
+    "exp": {
+      "title": "KINH NGHIỆM LÀM VIỆC",
+      "contents": [
+        {
+          "com_name": "Công ty cổ phần 365",
+          "date": "(TỪ 01/01- 30/12/2017)",
+          "job": "Kế toán tổng hợp",
+          "context": "Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm"
+        },
+        {
+          "com_name": "Công ty CV 365",
+          "date": "(TỪ 01/01- 30/12/2017)",
+          "job": "Kế toán tổng hợp",
+          "context": "Tổng thu loại bỏ \n Lập báo cáo \n Chịu trách nhiệm"
+        }
+      ]
+    },
+    "conference": {
+      "title": "NGƯỜI THAM CHIẾU",
+      "person": [
+        {
+          "name": "NGUYỄN THỊ B",
+          "context": "Kế toán trưởng phòng 365"
+        },
+        {
+          "name": "NGUYỄN THỊ A",
+          "context": "Kế toán trưởng phòng 365"
+        }
+      ]
+    },
+    "personal_info": {
+      "date_of_birth": "01/01/1987",
+      "phone": "0363984002",
+      "mail": "lanh@gamil.com",
+      "location": "Số 1, đường Cầu Giấy"
+    },
+    "project": {
+      "title": "DỰ ÁN THAM GIA",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    },
+    "skill": {
+      "title": "KỸ NĂNG",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    },
+    "degree": {
+      "title": "CHỨNG CHỈ",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    },
+    "hobby": {
+      "title": "HOBBY",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    },
+    "gift": {
+      "title": "GIẢI THƯỞNG",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    },
+    "activation": {
+      "title": "HOẠT ĐỘNG",
+      "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Nullam consectetur justo vel ante lacinia, nec convallis mauris scelerisque. \n Aenean consectetur, libero sed iaculis tincidunt, metus nunc eleifend lectus, nec vehicula mauris turpis in odio."
+    }
+  }

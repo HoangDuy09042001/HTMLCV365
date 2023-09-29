@@ -1,0 +1,98 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Họ và tên",
+            "field": "name",
+            "content": ""
+        },
+        {
+            "id": 2,
+            "title": "Vị trí ứng tuyển",
+            "field": "job",
+            "content": ""
+        },
+        {
+            "id": 3,
+            "title": "Mục tiêu nghề nghiệp",
+            "field": "aim",
+            "content": [
+                {
+                    "subtitle": "",
+                    "content": ""
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Kinh nghiệm làm việc",
+            "field": "exp",
+            "content": [
+                {
+                    "com_name": "",
+                    "time": "",
+                    "job": "",
+                    "detail": ""
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Người tham chiếu",
+            "field": "reference",
+            "content": [
+                {
+                    "name": "",
+                    "job": ""
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Thông tin cá nhân",
+            "field": "personal_info",
+            "content": {
+                "date_of_birth": "",
+                "phone_number": "",
+                "email": "",
+                "address": ""
+            }
+        },
+        {
+            "id": 7,
+            "title": "Dự án tham gia",
+            "field": "project",
+            "content": ""
+        },
+        {
+            "id": 8,
+            "title": "Kỹ năng",
+            "field": "skill",
+            "content": ""
+        },
+        {
+            "id": 9,
+            "title": "Chứng chỉ",
+            "field": "degree",
+            "content": ""
+        },
+        {
+            "id": 10,
+            "title": "Sở thích",
+            "field": "hobby",
+            "content": ""
+        },
+        {
+            "id": 11,
+            "title": "Giải thưởng",
+            "field": "achievement",
+            "content": ""
+        },
+        {
+            "id": 12,
+            "title": "Hoạt động",
+            "field": "activation",
+            "content": ""
+        }
+    ]
+}
